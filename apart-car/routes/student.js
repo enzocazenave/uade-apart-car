@@ -79,7 +79,6 @@ router.get('/:id', [],
                 msg: 'Tu número de legajo o DNI no está registrado en nuestra base de datos.'
             });
 
-            console.log(student);
             delete student._doc.__v;
 
             res.status(200).json({
